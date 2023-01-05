@@ -1,0 +1,8 @@
+C:\Luigi\100DaysOfCode\Week1\Day3\bin\Debug\Day3.exe.config
+C:\Luigi\100DaysOfCode\Week1\Day3\bin\Debug\Day3.exe
+C:\Luigi\100DaysOfCode\Week1\Day3\bin\Debug\Day3.pdb
+C:\Luigi\100DaysOfCode\Week1\Day3\obj\Debug\Day3.csproj.AssemblyReference.cache
+C:\Luigi\100DaysOfCode\Week1\Day3\obj\Debug\Day3.csproj.SuggestedBindingRedirects.cache
+C:\Luigi\100DaysOfCode\Week1\Day3\obj\Debug\Day3.csproj.CoreCompileInputs.cache
+C:\Luigi\100DaysOfCode\Week1\Day3\obj\Debug\Day3.exe
+C:\Luigi\100DaysOfCode\Week1\Day3\obj\Debug\Day3.pdb
