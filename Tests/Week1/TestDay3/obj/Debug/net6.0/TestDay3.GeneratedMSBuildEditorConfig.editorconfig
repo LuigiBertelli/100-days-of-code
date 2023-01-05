@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TestDay3
-build_property.ProjectDir = C:\Luigi\100DaysOfCode\Week1\Day3\TestDay3\
+build_property.ProjectDir = C:\Luigi\100DaysOfCode\Tests\Week1\TestDay3\
