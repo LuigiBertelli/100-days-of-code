@@ -1,0 +1,15 @@
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\obj\Debug\net7.0\Day6.csproj.AssemblyReference.cache
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\obj\Debug\net7.0\Day6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\obj\Debug\net7.0\Day6.AssemblyInfoInputs.cache
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\obj\Debug\net7.0\Day6.AssemblyInfo.cs
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\obj\Debug\net7.0\Day6.csproj.CoreCompileInputs.cache
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\bin\Debug\net7.0\Day6.exe
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\bin\Debug\net7.0\Day6.deps.json
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\bin\Debug\net7.0\Day6.runtimeconfig.json
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\bin\Debug\net7.0\Day6.dll
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\bin\Debug\net7.0\Day6.pdb
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\obj\Debug\net7.0\Day6.dll
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\obj\Debug\net7.0\refint\Day6.dll
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\obj\Debug\net7.0\Day6.pdb
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\obj\Debug\net7.0\Day6.genruntimeconfig.cache
+C:\Luigi\100DaysOfCode\Main\Week1\Day6\obj\Debug\net7.0\ref\Day6.dll
