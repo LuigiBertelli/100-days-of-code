@@ -7,6 +7,6 @@ namespace Day35.helper
 {
     public class PositionHelper
     {
-        public static double Distance((float x, float y) pos1, (float x, float y) pos2) => Math.Sqrt(Math.Pow((double)(pos1.x - pos2.x), 2d) + Math.Pow((double)(pos1.x - pos2.x), 2d));
+        public static double Distance((double x, double y) pos1, (double x, double y) pos2) => Math.Sqrt(Math.Pow((pos1.x - pos2.x), 2d) + Math.Pow((pos1.x - pos2.x), 2d));
     }
 }

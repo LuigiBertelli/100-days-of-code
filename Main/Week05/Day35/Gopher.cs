@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Globalization;
 using System.IO;
 using Day35.helper;
 
@@ -11,7 +12,7 @@ namespace Day35
     {
 
         private bool isBadFile;
-        private string[] fileLines;
+        private string[] fileLines = new string[0];
 
         private const string curPath = @"C:\Luigi\100DaysOfCode\Main\Week05\Day35\assets\";
         public Gopher(string filename)
@@ -54,37 +55,39 @@ namespace Day35
 
 
                     // Gopher position
-                    var posGp = (float.Parse(splitted[1]), float.Parse(splitted[2]));
+                    var posGp = (double.Parse(splitted[1], NumberStyles.Any, CultureInfo.InvariantCulture), double.Parse(splitted[2], NumberStyles.Any, CultureInfo.InvariantCulture));
 
                     // Dog position
-                    var posDog = (float.Parse(splitted[3]), float.Parse(splitted[4]));
+                    var posDog = (double.Parse(splitted[3], NumberStyles.Any, CultureInfo.InvariantCulture), double.Parse(splitted[4], NumberStyles.Any, CultureInfo.InvariantCulture));
 
                     
                     curLine++;
-                    Console.WriteLine(holes);
-                    while(curLine < curLine + holes) {
+                    var max = curLine + holes;
+                    var canEscape = false;
+
+                    while(curLine < max) {
                         var set = fileLines[curLine];
                         var splittedSet = set.Split(' ');
                         
-                        Console.WriteLine(curLine);
-                        foreach(var it in splittedSet) Console.WriteLine(it);
-                        //Console.WriteLine(splittedSet.Length);
                         if(splittedSet.Length != 2) {
                             throw new Exception("Invalid set");
                         }
 
-                        (float x, float y) hole = (float.Parse(splittedSet[0]), float.Parse(splittedSet[1]));
+                        (double x, double y) hole = (double.Parse(splittedSet[0], NumberStyles.Any, CultureInfo.InvariantCulture), double.Parse(splittedSet[1], NumberStyles.Any, CultureInfo.InvariantCulture));
 
                         var distDog = PositionHelper.Distance(posDog, hole);
                         var distGopher = PositionHelper.Distance(posGp, hole);
 
-                        if(distGopher > distDog * 2) {
-                            results.Add($"The gopher can escape through the hole at ({hole.x},{hole.y}).");
-                        } else {
-                            results.Add("The gopher cannot escape.");
+                        if(!canEscape && distGopher < distDog / 2) {
+                            results.Add($"The gopher can escape through the hole at ({splittedSet[0]},{splittedSet[1]}).");
+                            canEscape = true;
                         }
 
-                        curLine++;
+                        curLine++;                        
+                    }
+
+                    if(!canEscape) {
+                        results.Add("The gopher cannot escape.");
                     }
                 }
                 

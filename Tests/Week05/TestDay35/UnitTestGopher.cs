@@ -7,8 +7,8 @@ public class UnitTestGopher
 {
 
     [Theory]
-    [InlineData("day-35_sample_1_valid.txt", new string[]{ "The gopher cannot escape.", "The gopher can escape through the hole at (2.500000,2.500000)." })]
-    [InlineData("day-35_sample_2_valid.txt", new string[]{ "The gopher cannot escape.", "The gopher can escape through the hole at (2.500000,2.500000)."})]
+    [InlineData("day-35_sample_1_valid.txt", new string[]{ "The gopher cannot escape.", "The gopher can escape through the hole at (2.500,2.500)." })]
+    [InlineData("day-35_sample_2_valid.txt", new string[]{ "The gopher cannot escape.", "The gopher can escape through the hole at (2.500,2.500)."})]
     public void TestgopherEscapePlan(string filename, string[] expectedResult)
     {
         var gopher = new Gopher(filename);
